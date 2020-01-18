@@ -37,10 +37,12 @@ const NavLink = styled(Link)`
   padding: 3px 20px 20px;
   width: 100%;
 `;
-const Nav = () => {
+const Nav = ({ logo }) => {
   return (
     <NavLinks>
-      <Logo>Logo</Logo>
+      {/* <Logo>Logo</Logo> */}
+      <img src={logo} className='logo' alt='logo' />
+
       <NavList>
         {navLinks &&
           navLinks.map(({ url, name }, i) => (
