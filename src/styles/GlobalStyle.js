@@ -36,15 +36,6 @@ const GlobalStyle = createGlobalStyle`
     &.hidden {
       overflow: hidden;
     }
-    &.blur {
-      overflow: hidden;
-      #root > #content > * {
-        filter: blur(5px) brightness(0.7);
-        transition: ${theme.transition};
-        pointer-events: none;
-        user-select: none;
-      }
-    }
   }
 
   ::selection {
@@ -53,9 +44,9 @@ const GlobalStyle = createGlobalStyle`
 
   #root {
     // min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 100%;
+    // display: grid;
+    // grid-template-rows: 1fr auto;
+    // grid-template-columns: 100%;
   }
 
   h1,
@@ -74,8 +65,8 @@ const GlobalStyle = createGlobalStyle`
       font-size: 80px;
       line-height: 1.1;
       margin: 0;
-      ${media.desktop`font-size: 70px;`};
-      ${media.tablet`font-size: 60px;`};
+      ${media.md`font-size: 70px;`};
+      ${media.xs`font-size: 60px;`};
       ${media.phablet`font-size: 50px;`};
       ${media.phone`font-size: 40px;`};
     }
@@ -84,8 +75,8 @@ const GlobalStyle = createGlobalStyle`
       font-size: 60px;
       line-height: 1.1;
       margin: 0;
-      ${media.desktop`font-size: 50px;`};
-      ${media.tablet`font-size: 40px;`};
+      ${media.md`font-size: 50px;`};
+      ${media.xs`font-size: 40px;`};
     }
   }
 

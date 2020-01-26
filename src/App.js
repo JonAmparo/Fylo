@@ -1,16 +1,20 @@
 import React, { Fragment } from 'react';
-import { Nav } from 'components';
+import { Nav, Home, Footer } from 'components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { GlobalStyle, theme } from 'styles';
-import logo from 'components/icons/logo.svg';
+import { GlobalStyle } from 'styles';
 
 function App() {
   return (
     <Fragment>
       <GlobalStyle />
       <Router>
-        <Nav logo={logo}/>
-        <img src={logo} className='App-logo' alt='logo' />
+        <Nav />
+        <Switch>
+          <Route exact path='/' render={() => <Home />} />
+          {/* <Route exact path='/projects' component={Project} />
+          <Route exact path='/contact' component={Contact} /> */}
+        </Switch>
+        <Footer />
       </Router>
     </Fragment>
   );

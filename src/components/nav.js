@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { navLinks } from 'config';
-import { theme, media, mixins } from 'styles';
-const { fonts, colors, fontSizes } = theme;
+import { theme, mixins } from 'styles';
+const { colors, fontSizes } = theme;
 
 const NavLinks = styled.nav`
   ${mixins.flexBetween};
@@ -18,9 +17,6 @@ const NavLinks = styled.nav`
   padding: 30px 8vmin 25px;
 `;
 
-const Logo = styled.h1`
-  color: ${colors.lightestSlate};
-`;
 const NavList = styled.ul`
   grid-gap: 5px;
   padding: 0;
@@ -37,11 +33,10 @@ const NavLink = styled(Link)`
   padding: 3px 20px 20px;
   width: 100%;
 `;
-const Nav = ({ logo }) => {
+const Nav = () => {
   return (
     <NavLinks>
-      {/* <Logo>Logo</Logo> */}
-      <img src={logo} className='logo' alt='logo' />
+      <h3>Navigation Title/Logo</h3>
 
       <NavList>
         {navLinks &&

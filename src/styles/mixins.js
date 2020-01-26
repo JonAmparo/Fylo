@@ -1,6 +1,5 @@
 import { css } from 'styled-components';
 import theme from './theme';
-import media from './media';
 const { colors, fontSizes, fonts } = theme;
 
 const mixins = {
@@ -66,6 +65,41 @@ const mixins = {
       background-color: ${colors.green};
       transition: ${theme.transition};
       opacity: 0.5;
+    }
+  `,
+
+  Button: css`
+    color: ${colors.lightBlue};
+    background-color: transparent;
+    border: 1px solid ${colors.lightBlue};
+    border-radius: ${theme.borderRadius};
+    padding: 0.75rem 1rem;
+    font-size: ${fontSizes.smish};
+    font-family: ${fonts.Calibre};
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: ${theme.transition};
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    &:hover,
+    &:focus,
+    &:active {
+      color: ${colors.white};
+      background-color: ${colors.lightBlue};
+    }
+    &:after {
+      display: none !important;
+    }
+
+    &:disabled,
+    &:disabled:hover {
+      background-color: transparent;
+
+      cursor: default;
+      color: ${colors.darkGray};
+      border: 1px solid ${colors.darkGray};
     }
   `
 };
