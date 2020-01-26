@@ -24,6 +24,7 @@ const NavList = styled.ul`
   flex-direction: row;
 `;
 const NavListItem = styled.li`
+${mixins.link};
   margin: 0 auto 0;
   float: left;
   font-size: ${fontSizes.xl};

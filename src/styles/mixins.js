@@ -24,6 +24,7 @@ const mixins = {
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
+    font-family: ${fonts.Raleway};
     transition: ${theme.transition};
     cursor: pointer;
     &:hover,
@@ -42,6 +43,7 @@ const mixins = {
     transition: ${theme.transition};
     cursor: pointer;
     color: ${colors.green};
+    font-family: ${fonts.Raleway};
     &:hover,
     &:focus,
     &:active {
@@ -75,7 +77,7 @@ const mixins = {
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;
     font-size: ${fontSizes.smish};
-    font-family: ${fonts.Calibre};
+    font-family: ${fonts.Raleway};
     line-height: 1;
     text-decoration: none;
     cursor: pointer;

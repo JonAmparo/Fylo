@@ -29,8 +29,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${colors.black};
     color: ${colors.slate};
     line-height: 1.3;
-    font-family: ${fonts.GothamXNarrow};
-    font-size: ${fontSizes.xl};
+    font-family: ${fonts.OpenSans};
+    font-size: ${fontSizes.sm};
     ${media.phablet`font-size: ${fontSizes.lg};`}
 
     &.hidden {

@@ -1,5 +1,14 @@
 const theme = {
   colors: {
+    darkBlueIntroEmail: 'hsl(217, 28%, 15%)',
+    darkBlueMain: 'hsl(218, 28%, 13%)',
+    darkBlueFooter: 'hsl(216, 53%, 9%)',
+    darkBlueTestimonials: 'hsl(219, 30%, 18%)',
+
+    cyan: 'hsl(176, 68%, 64%)',
+    darkBlueTestimonials: 'hsl(198, 60%, 50%)',
+    white: 'hsl(0, 0%, 100%)',
+
     black: '#141618',
     white: '#ffffff',
     red: '#b4001e',
@@ -19,16 +28,14 @@ const theme = {
     lightestSlate: '#ccd6f6',
     pink: '#FF647F',
     yellow: '#FFC464',
-    orange: '#FF9E64',
-    blue: '#71AFFF',
-    darkBlue: '#1D7FFC'
+    orange: '#FF9E64'
   },
 
   fonts: {
-    Calibre:
-      'Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif',
-    GothamXNarrow:
-      'Gotham XNarrow, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace'
+    Raleway:
+      'Raleway, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif',
+    OpenSans:
+      'Open Sans, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace'
   },
 
   fontSizes: {
