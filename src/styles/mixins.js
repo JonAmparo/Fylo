@@ -15,6 +15,14 @@ const mixins = {
     align-items: center;
   `,
 
+  ContainerFluid: css`
+    margin: 3vmin 5vmin;
+  `,
+
+  Container: css`
+    margin: 3vmin 25vmin;
+  `,
+
   outline: css`
     outline: 1px solid red;
   `,
@@ -71,19 +79,18 @@ const mixins = {
   `,
 
   Button: css`
-    color: ${colors.lightBlue};
-    background-color: transparent;
-    border: 1px solid ${colors.lightBlue};
+    color: ${colors.white};
+    background-color: ${colors.blue};
     border-radius: ${theme.borderRadius};
-    padding: 0.75rem 1rem;
-    font-size: ${fontSizes.smish};
+    outline: 0px;
+    padding: 0.85rem 4rem;
+    font-size: ${fontSizes.sm};
     font-family: ${fonts.Raleway};
     line-height: 1;
-    text-decoration: none;
+    font-weight: bold;
+    text-decoration: bold;
     cursor: pointer;
     transition: ${theme.transition};
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
     text-align: center;
     &:hover,
     &:focus,

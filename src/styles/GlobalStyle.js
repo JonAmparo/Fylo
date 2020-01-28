@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.black};
+    background-color: ${colors.darkBlueIntroEmail};
     color: ${colors.slate};
     line-height: 1.3;
     font-family: ${fonts.OpenSans};
@@ -87,8 +87,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   svg {
-    width: 100%;
-    height: 100%;
+    // width: inherit;
+    // height: inherit;
     fill: currentColor;
     vertical-align: middle;
   }

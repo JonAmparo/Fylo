@@ -6,7 +6,7 @@ const theme = {
     darkBlueTestimonials: 'hsl(219, 30%, 18%)',
 
     cyan: 'hsl(176, 68%, 64%)',
-    darkBlueTestimonials: 'hsl(198, 60%, 50%)',
+    blue: 'hsl(198, 60%, 50%)',
     white: 'hsl(0, 0%, 100%)',
 
     black: '#141618',
@@ -57,7 +57,7 @@ const theme = {
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
   transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
 
-  borderRadius: '3px',
+  borderRadius: '50px',
   navHeight: '100px',
   navScrollHeight: '70px',
   margin: '20px',
