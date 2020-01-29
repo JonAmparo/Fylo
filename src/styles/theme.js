@@ -10,7 +10,6 @@ const theme = {
     white: 'hsl(0, 0%, 100%)',
 
     black: '#141618',
-    white: '#ffffff',
     red: '#b4001e',
     gray: '#b5b3b3',
     lightSlateGray: '#949394',

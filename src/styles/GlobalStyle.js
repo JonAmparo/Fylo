@@ -26,9 +26,9 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.darkBlueIntroEmail};
-    color: ${colors.slate};
-    line-height: 1.3;
+    background-color: ${colors.darkBlueMain};
+    color: ${colors.white};
+    line-height: 1.5;
     font-family: ${fonts.OpenSans};
     font-size: ${fontSizes.sm};
     ${media.phablet`font-size: ${fontSizes.lg};`}
@@ -55,9 +55,14 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-weight: 600;
-    color: ${colors.lightestSlate};
+    font-weight: 700;
+    color: ${colors.white};
+    font-family: ${fonts.Raleway};
     margin: 0 0 10px 0;
+  }
+
+  h2 {
+    font-size: ${fontSizes.display4};
   }
 
   h1 {
@@ -82,15 +87,16 @@ const GlobalStyle = createGlobalStyle`
 
   img {
     width: 100%;
-    max-width: 100%;
+    // max-width: 100%;
     vertical-align: middle;
   }
 
   svg {
-    // width: inherit;
-    // height: inherit;
+    width: inherit;
+    height: inherit;
     fill: currentColor;
     vertical-align: middle;
+    overflow: visible;
   }
 
   a {

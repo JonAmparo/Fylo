@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 import theme from './theme';
+import media from './media';
+
 const { colors, fontSizes, fonts } = theme;
 
 const mixins = {
@@ -16,11 +18,28 @@ const mixins = {
   `,
 
   ContainerFluid: css`
-    margin: 3vmin 5vmin;
+    margin: 0vmin 5vmin;
   `,
 
   Container: css`
-    margin: 3vmin 25vmin;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95%;
+
+    ${media.lg`
+      max-width: 750px;
+    `}
+
+    ${media.md`
+      max-width: 650px;
+    `}
+
+    ${media.sm`
+      max-width: 625px;
+    `}
   `,
 
   outline: css`
