@@ -38,14 +38,16 @@ const theme = {
   },
 
   fontSizes: {
+    small: '10px',
     xs: '12px',
     smish: '13px',
     sm: '14px',
+    smd: '15px',
     md: '16px',
     lg: '18px',
     xl: '20px',
     xxl: '22px',
-    h3: '32px',
+    display5: '32px',
     display4: '36px',
     display3: '40px',
     display2: '44px',

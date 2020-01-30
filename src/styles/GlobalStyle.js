@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     font-family: ${fonts.OpenSans};
     font-size: ${fontSizes.sm};
-    ${media.phablet`font-size: ${fontSizes.lg};`}
+    ${media.phablet`font-size: ${fontSizes.sm};`}
 
     &.hidden {
       overflow: hidden;
@@ -61,8 +61,26 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 0 10px 0;
   }
 
-  h2 {
+  h1 {
     font-size: ${fontSizes.display4};
+  }
+
+  h2 {
+    font-size: ${fontSizes.display5};
+  }
+  h3 {
+    font-size: ${fontSizes.xxl};
+  }
+  h4 {
+    font-size: ${fontSizes.xl};
+  }
+
+  h5 {
+    font-size: ${fontSizes.lg};
+  }
+
+  h6 {
+    font-size: ${fontSizes.md};
   }
 
   h1 {
@@ -92,8 +110,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   svg {
-    width: inherit;
-    height: inherit;
+    // width: inherit;
+    // height: inherit;
     fill: currentColor;
     vertical-align: middle;
     overflow: visible;

@@ -7,13 +7,13 @@
 1. Install the repo
 
    ```sh
-   npm install git@github.com:JonAmparo/react-starter.git
+   npm install git@github.com:JonAmparo/fylo.git
    ```
 
 2. cd into the directory
 
    ```sh
-   cd react-starter
+   cd fylo
    ```
 
 3. Install dependencies

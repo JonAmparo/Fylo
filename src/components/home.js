@@ -21,13 +21,17 @@ import { theme, mixins, media } from 'styles';
 const { colors, fontSizes } = theme;
 
 const StyledContainer = styled.main`
-
   div.curvy {
     background-image: url(${BgCurvyDesktop});
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 13rem;
     background-size: cover;
+
+    ${media.xs`
+      padding-bottom: 0;
+      margin-bottom: 9rem;
+    `}
   }
 `;
 
@@ -40,6 +44,7 @@ const Centered = styled.div`
   ${mixins.Container};
 
   img {
+    padding-top: 25px;
     width: 531px;
     ${media.xs`
       width: 350px; 
@@ -53,12 +58,18 @@ const Centered = styled.div`
 
 const CenteredText = styled.div`
   ${mixins.Container};
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  p {
+    margin: 25px 75px 0;
+  }
 `;
 
 const CenteredButton = styled.div`
+  margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +79,8 @@ const Button = styled.button`
 `;
 
 const SectionIcon = styled.section`
-  background-color: ${colors.darkBlueMain};
+  position: relative;
+  top: 0rem;
 `;
 
 const Flex = styled.div`
@@ -76,61 +88,117 @@ const Flex = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 `;
 
 const Icons = styled.div`
   text-align: center;
   flex-direction: column;
   align-items: center;
-  width: 40%;
-  margin: 0 4vmin;
-  // padding: 20px;
-  // margin: 0 20px 20px;
+  width: 22rem;
+  margin: 0 9rem;
+
+  h5 {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  p {
+    margin-bottom: 5rem;
+  }
+
+  ${media.lg`
+    margin: 0 4rem;
+  `}
+
+  ${media.sm`
+    margin: 0 1rem;
+  `};
+
+  ${media.phone`
+    width: 22rem;
+  `};
 `;
 
-const StayProductive = styled.div`
+const StayProductive = styled.section`
   ${mixins.ContainerFluid};
   flex-wrap: wrap;
   display: flex;
-  // justify-content: center;
   align-items: center;
+  margin: 2rem auto 0;
+  justify-content: center;
+
+  ${media.sm`
+    margin-top: 7rem;
+  `};
 `;
 
 const Left = styled.div`
-  width: 45%;
+  width: 48%;
+
+  ${media.xs`
+    width: 85%;
+    
+  `};
 `;
 
 const Right = styled.div`
-  width: 45%;
+  width: 41%;
+  margin-left: 3rem;
+
+  a {
+    color: ${colors.cyan};
+    padding-bottom: 5px;
+    border-bottom: 1px solid ${colors.cyan};
+
+    svg {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      font-size: ${fontSizes.smd};
+    }
+  }
+
+  ${media.xs`
+    width: 85%;
+    margin: 0 auto;
+  `};
 `;
 
-const Testimonials = styled.div`
+const Testimonials = styled.section`
   ${mixins.ContainerFluid};
   flex-wrap: wrap;
   display: flex;
+  margin: 7rem auto 0;
+  justify-content: center;
 
-  &:before {
-    content: '';
-    background-image: url(${BgQoutes});
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: -1;
+  div.quotes {
+    &:before {
+      content: '';
+      background-image: url(${BgQoutes});
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: -1;
+    }
   }
 `;
 
 const Box = styled.div`
   outline: 0px white;
-  width: 30%;
-  padding: 1rem;
+  padding: 2rem 1.5rem 1rem;
   margin: 0rem 0.7rem;
   margin-top: 37px;
   background-color: ${colors.darkBlueTestimonials};
+  width: 21rem;
+  align-items: center;
+  justify-content: center;
 
   span {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
     img {
       height: 30px;
@@ -139,35 +207,52 @@ const Box = styled.div`
     }
 
     p {
-      margin: 0px;
-    }
-
-    &.name {
-      // width: 90%;
+      margin: 0 0 0 10px;
+      font-weight: 600;
     }
 
     &.position {
-      font-size: 10px;
-      display: block;
-      // width: 90%;
+      font-size: ${fontSizes.small};
+      font-weight: 500;
+      color: ${colors.gray};
     }
   }
 `;
 
-const Email = styled.div`
+const Email = styled.section`
   ${mixins.Container};
   background-color: ${colors.darkBlueIntroEmail};
-  padding: 3rem;
-  top: 45px;
+  padding: 3rem 4rem;
+  top: 105px;
   position: relative;
   margin-top: 3rem;
   z-index: 1;
   text-align: center;
 
-  input {
-    border-radius: 10px;
-    padding: 0.3rem 4rem;
-    font-size: ${fontSizes.xl};
+  div {
+    flex-wrap: wrap;
+
+    input {
+      font-size: ${fontSizes.sm};
+      border-radius: ${theme.borderRadius};
+      padding: 0.5rem 0 7px 0.90rem;
+      width: 60%;
+      margin: 0 0.5rem 0 1rem;
+
+      ${media.sm`
+        width: 100%;
+        margin: 0 0 1.5rem;
+      `};
+    }
+
+    button {
+      padding: 0.8rem 1rem;
+      width: 35%;
+
+      ${media.sm`
+        width: 100%;
+      `};
+    }
   }
 `;
 
@@ -180,9 +265,7 @@ const Home = () => {
         </Centered>
         <div className='curvy'>
           <CenteredText>
-            <h2>
-              All your files in one secure location, accessible anywhere.
-            </h2>
+            <h2>All your files in one secure location, accessible anywhere.</h2>
 
             <p>
               Fylo stores all your most important files in one secure location.
@@ -200,7 +283,7 @@ const Home = () => {
         <Flex>
           <Icons>
             <IconAccessAnywhere />
-            <h3>Access your files, anywhere</h3>
+            <h5>Access your files, anywhere</h5>
             <p>
               The ability to use a smartphone, tablet, or computer to access
               your account means your files follow you everywhere.
@@ -209,7 +292,7 @@ const Home = () => {
           <Icons>
             <IconSecurity />
 
-            <h3>Security you can trust</h3>
+            <h5>Security you can trust</h5>
             <p>
               2-factor authentication and user-controlled encryption are just a
               couple of the security features we allow to help secure your
@@ -218,7 +301,7 @@ const Home = () => {
           </Icons>
           <Icons>
             <IconCollaboration />
-            <h3>Real-time collaboration</h3>
+            <h5>Real-time collaboration</h5>
             <p>
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
@@ -226,7 +309,7 @@ const Home = () => {
           </Icons>
           <Icons>
             <IconAnyFile />
-            <h3>Store any type of file</h3>
+            <h5>Store any type of file</h5>
             <p>
               Whether you're sharing holidays photos or work documents, Fylo has
               you covered allowing for all file types to be securely stored and
@@ -261,6 +344,7 @@ const Home = () => {
       </StayProductive>
 
       <Testimonials>
+        <div className='quotes'></div>
         <Box>
           <p>
             Fylo has improved our team productivity by an order of magnitude.
@@ -310,10 +394,12 @@ const Home = () => {
         <p>
           It only takes a minute to sign up and our free starter tier is
           extremely generous. If you have any questions, our support team would
-          be happy to help you.{' '}
+          be happy to help you.
         </p>
-        <input type='text' name='' id='' />
-        <Button> Get Started For Free</Button>
+        <div>
+          <input type='text' placeholder='email@example.com' name='' id='' />
+          <Button> Get Started For Free</Button>
+        </div>
       </Email>
     </StyledContainer>
   );

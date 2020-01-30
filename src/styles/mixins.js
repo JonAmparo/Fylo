@@ -18,28 +18,49 @@ const mixins = {
   `,
 
   ContainerFluid: css`
-    margin: 0vmin 5vmin;
+    margin: 0vmin auto;
+    max-width: 95%;
+    width: 90% ${media.lg`
+      max-width: 80rem;
+      // width: 75rem;
+
+    `};
+
+    ${media.md`
+      max-width: 67rem;
+    `};
+
+    ${media.sm`
+      max-width: 52rem;
+      // width: 32rem;
+    `};
+
+    ${media.xs`
+      max-width: 38rem;
+      // width: 20rem;
+    `};
   `,
 
   Container: css`
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 95%;
+    margin: 0vmin auto;
+    max-width: 60%;
 
     ${media.lg`
       max-width: 750px;
-    `}
+    `};
 
     ${media.md`
       max-width: 650px;
-    `}
+    `};
 
     ${media.sm`
       max-width: 625px;
-    `}
+    `};
+
+    ${media.phone`
+      margin: 0 15px;
+      max-width: 625px;
+    `};
   `,
 
   outline: css`
