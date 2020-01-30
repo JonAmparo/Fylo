@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/fylo/static/js/main.a68d611c.chunk.js",
-    "main.js.map": "/fylo/static/js/main.a68d611c.chunk.js.map",
+    "main.js": "/fylo/static/js/main.3356396b.chunk.js",
+    "main.js.map": "/fylo/static/js/main.3356396b.chunk.js.map",
     "runtime-main.js": "/fylo/static/js/runtime-main.ec9696fb.js",
     "runtime-main.js.map": "/fylo/static/js/runtime-main.ec9696fb.js.map",
-    "static/js/2.8d2af67d.chunk.js": "/fylo/static/js/2.8d2af67d.chunk.js",
-    "static/js/2.8d2af67d.chunk.js.map": "/fylo/static/js/2.8d2af67d.chunk.js.map",
+    "static/js/2.1fa2fd50.chunk.js": "/fylo/static/js/2.1fa2fd50.chunk.js",
+    "static/js/2.1fa2fd50.chunk.js.map": "/fylo/static/js/2.1fa2fd50.chunk.js.map",
     "index.html": "/fylo/index.html",
-    "precache-manifest.fb3ced3f46718e89ec5218d34bceb993.js": "/fylo/precache-manifest.fb3ced3f46718e89ec5218d34bceb993.js",
+    "precache-manifest.41b1b0544eab9045486610b62e8f8f52.js": "/fylo/precache-manifest.41b1b0544eab9045486610b62e8f8f52.js",
     "service-worker.js": "/fylo/service-worker.js",
-    "static/js/2.8d2af67d.chunk.js.LICENSE": "/fylo/static/js/2.8d2af67d.chunk.js.LICENSE",
+    "static/js/2.1fa2fd50.chunk.js.LICENSE": "/fylo/static/js/2.1fa2fd50.chunk.js.LICENSE",
     "static/media/Calibre-Light.woff2": "/fylo/static/media/Calibre-Light.183de736.woff2",
     "static/media/Calibre-Light.woff": "/fylo/static/media/Calibre-Light.62b8f0fd.woff",
     "static/media/Calibre-Light.ttf": "/fylo/static/media/Calibre-Light.73b7f438.ttf",
@@ -64,7 +64,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ec9696fb.js",
-    "static/js/2.8d2af67d.chunk.js",
-    "static/js/main.a68d611c.chunk.js"
+    "static/js/2.1fa2fd50.chunk.js",
+    "static/js/main.3356396b.chunk.js"
   ]
 }
