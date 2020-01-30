@@ -45,14 +45,14 @@ const NavList = styled.ul`
 const NavListItem = styled.li`
   ${mixins.link};
   margin: 0 15px 0;
-  font-size: ${fontSizes.smish};
+  font-size: ${fontSizes.sm};
+
+  ${media.xs`
+    font-size: ${fontSizes.smish};
+  `};
 `;
 const NavLink = styled(Link)`
   ${mixins.lightgrey};
-
-  &:hover {
-    color: ${colors.white};
-  }
 `;
 const Nav = () => {
   return (

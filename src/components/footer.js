@@ -2,26 +2,33 @@ import React from 'react';
 import styled from 'styled-components';
 import { IconLogo, IconLocation, IconPhone, IconEmail } from 'components/icons';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { theme, mixins, media } from 'styles';
-const { fonts, colors, fontSizes } = theme;
+import { theme, media } from 'styles';
+const { colors } = theme;
 
 const StyledContainer = styled.footer`
   background-color: ${colors.darkBlueFooter};
   justify-content: space-between;
   width: 100%;
   flex-direction: row;
-  padding: 30px 8vmin 25px;
+  padding: 15rem 8vmin 1.5rem;
   position: relative;
-  padding-top: 100px;
   display: flex;
 
-  ${media.phone`
+  ${media.sm`
     display: block;
   `};
 `;
 const LogoLocation = styled.div`
-  ${media.phone`
-    padding-top: 4rem;
+  width: 35%;
+  z-index: 1;
+  bottom: 73px;
+  position: relative;
+  div {
+  }
+  ${media.sm`
+    padding-top: 5rem;
+    width: 100%;
+    bottom: 0px;
   `};
 `;
 
@@ -30,7 +37,7 @@ const LogoLink = styled.a`
     width: 135px;
     margin-bottom: 2rem;
 
-    ${media.phone`
+    ${media.sm`
       width: 200px;
     `};
   }
@@ -46,43 +53,39 @@ const SectionLocaton = styled.div`
       margin-top: 6px;
     }
   }
-  p {
-  }
-  ${media.phone`
-
-  `}
 `;
 
 const SectionContact = styled.div`
   margin-bottom: 3rem;
+  width: 20%;
   span {
     margin-bottom: 1rem;
+    display: block;
     svg {
       margin-right: 1rem;
     }
   }
-
-  span {
-    ${media.phone`
-      display: block;
-    `};
-  }
+  ${media.sm`
+    width: 100%;
+  `};
 `;
 
 const SectionLinks = styled.div`
+  display: inline-flex;
   ul {
     list-style: none;
-    column-count: 2;
     padding-left: 0px;
-    margin-bottom: 2.5rem;
+    margin: 0 2.5rem 0 0;
     li {
       margin: 0 0 0.5rem;
     }
   }
 
-  ${media.phone`
+  ${media.sm`
+    display: block;
+
     ul {
-      column-count: 1;
+      margin-bottom: 2.5rem;
     }
   `};
 `;
@@ -99,11 +102,15 @@ const SectionSocials = styled.div`
     position: relative;
     top: -3px;
     border-radius: 50%;
-    padding: 0.3rem;
+    padding: 0.35rem 0rem 0rem 0.55rem;
   }
 
-  ${media.phone`
+  ${media.sm`
     text-align: center;
+    a {
+       padding: 0.3rem;
+    }
+   
   `};
 `;
 
@@ -114,17 +121,16 @@ const Footer = () => {
         <LogoLink href='#!'>
           <IconLogo />
         </LogoLink>
+        <SectionLocaton>
+          <span>
+            <IconLocation />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </span>
+        </SectionLocaton>
       </LogoLocation>
-
-      <SectionLocaton>
-        <span>
-          <IconLocation />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </span>
-      </SectionLocaton>
 
       <SectionContact>
         <span>

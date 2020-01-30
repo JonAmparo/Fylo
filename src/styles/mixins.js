@@ -66,13 +66,17 @@ const mixins = {
   outline: css`
     outline: 1px solid red;
   `,
+
+  boxShadow: css`
+    box-shadow: 2px 3px 5px ${colors.darkBlueFooter};
+  `,
+
   link: css`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    font-family: ${fonts.Raleway};
     transition: ${theme.transition};
     cursor: pointer;
     &:hover,

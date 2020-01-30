@@ -9,12 +9,10 @@ import Profile2 from '../images/profile-2.jpg';
 import Profile3 from '../images/profile-3.jpg';
 
 import {
-  IconBgCurvyDesktop,
   IconAccessAnywhere,
   IconSecurity,
   IconCollaboration,
   IconAnyFile,
-  IconArrow,
   IconArroww
 } from 'components/icons';
 import { theme, mixins, media } from 'styles';
@@ -66,6 +64,14 @@ const CenteredText = styled.div`
   p {
     margin: 25px 75px 0;
   }
+
+  ${media.xs`
+
+  p{
+       margin: 1.5rem 1rem;
+  }
+ 
+  `}
 `;
 
 const CenteredButton = styled.div`
@@ -100,6 +106,10 @@ const Icons = styled.div`
 
   h5 {
     margin: 1rem 0 0.5rem 0;
+
+    ${media.tablet`
+      margin-top: 2rem;
+    `};
   }
 
   p {
@@ -194,6 +204,7 @@ const Box = styled.div`
   width: 21rem;
   align-items: center;
   justify-content: center;
+  ${mixins.boxShadow};
 
   span {
     display: flex;
@@ -226,8 +237,19 @@ const Email = styled.section`
   top: 105px;
   position: relative;
   margin-top: 3rem;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
+  border-radius: 7px;
+  ${mixins.boxShadow};
+
+  ${media.xs`
+    padding: 3rem 1.5rem;
+    top: 150px;
+  `}
+
+  ${media.phablet`
+    top: 170px;
+  `}  
 
   div {
     flex-wrap: wrap;
@@ -235,7 +257,7 @@ const Email = styled.section`
     input {
       font-size: ${fontSizes.sm};
       border-radius: ${theme.borderRadius};
-      padding: 0.5rem 0 7px 0.90rem;
+      padding: 0.5rem 0 7px 0.9rem;
       width: 60%;
       margin: 0 0.5rem 0 1rem;
 
@@ -327,7 +349,7 @@ const Home = () => {
           />
         </Left>
         <Right>
-          <h1>Stay productive, wherever you are</h1>
+          <h2>Stay productive, wherever you&nbsp;are</h2>
           <p>
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.

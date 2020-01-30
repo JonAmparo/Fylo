@@ -1,12 +1,7 @@
 import React from 'react';
 
 const IconBgCurvyDesktop = () => (
-  <svg
-    width='1440'
-    height='449'
-    xmlns='http://www.w3.org/2000/svg'
-    xmlns='http://www.w3.org/1999/xlink'
-  >
+  <svg width='1440' height='449' xmlns='http://www.w3.org/2000/svg'>
     <defs>
       <path id='a' d='M0 0h1454v449H0z' />
     </defs>

@@ -67,6 +67,10 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: ${fontSizes.display5};
+
+    ${media.tablet`
+      font-size: ${fontSizes.xxl};
+    `}
   }
   h3 {
     font-size: ${fontSizes.xxl};
@@ -128,7 +132,8 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.lightGrey};
+      color: ${colors.cyan};
+      border-color: ${colors.cyan};
     }
   }
 

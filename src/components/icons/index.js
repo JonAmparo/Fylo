@@ -8,7 +8,6 @@ import IconAccessAnywhere from './accessanywhere';
 import IconSecurity from './security';
 import IconCollaboration from './collaboration';
 import IconAnyFile from './anyfile';
-import IconArrow from './arrow';
 import IconArroww from './arroww';
 
 export {
@@ -22,6 +21,5 @@ export {
   IconSecurity,
   IconCollaboration,
   IconAnyFile,
-  IconArrow,
   IconArroww
 };
