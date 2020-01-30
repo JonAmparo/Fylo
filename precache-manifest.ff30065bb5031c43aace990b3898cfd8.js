@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4476334b84d512d8885925e41247612a",
+    "revision": "d2071fb4b9f61ae47ae96924fc9be8b1",
     "url": "/Fylo/index.html"
   },
   {
