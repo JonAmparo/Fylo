@@ -20,10 +20,10 @@ const mixins = {
   ContainerFluid: css`
     margin: 0vmin auto;
     max-width: 95%;
-    width: 90% ${media.lg`
-      max-width: 80rem;
-      // width: 75rem;
+    width: 90rem;
 
+    ${media.lg`
+      max-width: 80rem;
     `};
 
     ${media.md`
@@ -32,34 +32,31 @@ const mixins = {
 
     ${media.sm`
       max-width: 52rem;
-      // width: 32rem;
     `};
 
     ${media.xs`
-      max-width: 38rem;
-      // width: 20rem;
+    max-width: 24rem;
     `};
   `,
 
   Container: css`
     margin: 0vmin auto;
-    max-width: 60%;
+    max-width: 46.875rem;
 
     ${media.lg`
-      max-width: 750px;
+      max-width: 46.875rem;
     `};
 
     ${media.md`
-      max-width: 650px;
+      max-width: 40.625rem;
     `};
 
     ${media.sm`
-      max-width: 625px;
+      max-width: 39.0625rem;
     `};
 
     ${media.phone`
       margin: 0 15px;
-      max-width: 625px;
     `};
   `,
 

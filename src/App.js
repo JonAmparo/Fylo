@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Nav, Home, Footer } from 'components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalStyle } from 'styles';
 
 function App() {

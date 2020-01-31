@@ -7,7 +7,6 @@ import BgQoutes from '../images/bg-quotes.png';
 import Profile1 from '../images/profile-1.jpg';
 import Profile2 from '../images/profile-2.jpg';
 import Profile3 from '../images/profile-3.jpg';
-
 import {
   IconAccessAnywhere,
   IconSecurity,
@@ -42,14 +41,10 @@ const Centered = styled.div`
   ${mixins.Container};
 
   img {
-    padding-top: 25px;
-    width: 531px;
+    padding-top: 3rem;
+    width: 41rem;
     ${media.xs`
-      width: 350px; 
-    `};
-
-    ${media.phone`
-      width: 250px;
+      width: 95%;
     `};
   }
 `;
@@ -66,11 +61,9 @@ const CenteredText = styled.div`
   }
 
   ${media.xs`
-
-  p{
-       margin: 1.5rem 1rem;
-  }
- 
+    p{
+      margin: 1.5rem 1rem;
+    }
   `}
 `;
 
@@ -85,6 +78,7 @@ const Button = styled.button`
 `;
 
 const SectionIcon = styled.section`
+  ${mixins.ContainerFluid};
   position: relative;
   top: 0rem;
 `;
@@ -100,13 +94,11 @@ const Flex = styled.div`
 const Icons = styled.div`
   text-align: center;
   flex-direction: column;
-  align-items: center;
   width: 22rem;
   margin: 0 9rem;
 
   h5 {
     margin: 1rem 0 0.5rem 0;
-
     ${media.tablet`
       margin-top: 2rem;
     `};
@@ -143,16 +135,15 @@ const StayProductive = styled.section`
 `;
 
 const Left = styled.div`
-  width: 48%;
+  width: 42%;
 
   ${media.xs`
     width: 85%;
-    
   `};
 `;
 
 const Right = styled.div`
-  width: 41%;
+  width: 39%;
   margin-left: 3rem;
 
   a {
@@ -171,7 +162,7 @@ const Right = styled.div`
 
   ${media.xs`
     width: 85%;
-    margin: 0 auto;
+    margin: 4rem auto 0;
   `};
 `;
 
