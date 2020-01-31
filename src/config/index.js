@@ -16,38 +16,38 @@ module.exports = {
   socialMedia: [
     {
       name: 'GitHub',
-      url: '',
+      url: ''
     },
     {
       name: 'Linkedin',
-      url: '',
+      url: ''
     },
     {
       name: 'Codepen',
-      url: '',
+      url: ''
     },
     {
       name: 'Instagram',
-      url: '',
+      url: ''
     },
     {
       name: 'Twitter',
-      url: '',
-    },
+      url: ''
+    }
   ],
 
   navLinks: [
     {
       name: 'Features',
-      url: '/features'
+      url: 'feature'
     },
     {
       name: 'Team',
-      url: '/team'
+      url: 'team'
     },
     {
       name: 'Sign In',
-      url: '/sign-in'
+      url: 'sign-in'
     }
   ]
 };

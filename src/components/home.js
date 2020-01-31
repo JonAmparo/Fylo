@@ -242,30 +242,31 @@ const Email = styled.section`
     top: 170px;
   `}  
 
-  div {
+    form {
     flex-wrap: wrap;
+    display: inline;
+  }
 
-    input {
-      font-size: ${fontSizes.sm};
-      border-radius: ${theme.borderRadius};
-      padding: 0.5rem 0 7px 0.9rem;
-      width: 60%;
-      margin: 0 0.5rem 0 1rem;
+  input {
+    font-size: ${fontSizes.sm};
+    border-radius: ${theme.borderRadius};
+    padding: 0.5rem 0 7px 0.9rem;
+    width: 60%;
+    margin: 0 0.5rem 0 1rem;
 
-      ${media.sm`
+    ${media.sm`
         width: 100%;
         margin: 0 0 1.5rem;
       `};
-    }
+  }
 
-    button {
-      padding: 0.8rem 1rem;
-      width: 35%;
+  button {
+    padding: 0.8rem 1rem;
+    width: 35%;
 
-      ${media.sm`
+    ${media.sm`
         width: 100%;
       `};
-    }
   }
 `;
 
@@ -409,10 +410,17 @@ const Home = () => {
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <div>
-          <input type='text' placeholder='email@example.com' name='' id='' />
+        <form>
+          <input
+            type='text'
+            placeholder='email@example.com'
+            name='email'
+            id='email'
+            for='email'
+          />
+
           <Button> Get Started For Free</Button>
-        </div>
+        </form>
       </Email>
     </StyledContainer>
   );

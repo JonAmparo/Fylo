@@ -188,13 +188,28 @@ const Footer = () => {
       </SectionLinks>
 
       <SectionSocials>
-        <a href='#' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='#'
+          id='facebook'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <FaFacebookF />
         </a>
-        <a href='#' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='#'
+          id='twitter'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <FaTwitter />
         </a>
-        <a href='#' target='_blank' rel='noopener noreferrer'>
+        <a
+          href='#'
+          id='instagram'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <FaInstagram />
         </a>
       </SectionSocials>

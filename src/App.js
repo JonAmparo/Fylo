@@ -11,8 +11,6 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path='/' render={() => <Home />} />
-          {/* <Route exact path='/projects' component={Project} />
-          <Route exact path='/contact' component={Contact} /> */}
         </Switch>
         <Footer />
       </Router>
