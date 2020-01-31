@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Fylo/static/js/main.bea17a14.chunk.js",
-    "main.js.map": "/Fylo/static/js/main.bea17a14.chunk.js.map",
+    "main.js": "/Fylo/static/js/main.10a981fd.chunk.js",
+    "main.js.map": "/Fylo/static/js/main.10a981fd.chunk.js.map",
     "runtime-main.js": "/Fylo/static/js/runtime-main.5bdd242f.js",
     "runtime-main.js.map": "/Fylo/static/js/runtime-main.5bdd242f.js.map",
     "static/js/2.d241d50a.chunk.js": "/Fylo/static/js/2.d241d50a.chunk.js",
     "static/js/2.d241d50a.chunk.js.map": "/Fylo/static/js/2.d241d50a.chunk.js.map",
     "index.html": "/Fylo/index.html",
-    "precache-manifest.86bef2cdf4f6793b1767c6e0a6dd3657.js": "/Fylo/precache-manifest.86bef2cdf4f6793b1767c6e0a6dd3657.js",
+    "precache-manifest.d742a182823eadc8172f8cae8994e74a.js": "/Fylo/precache-manifest.d742a182823eadc8172f8cae8994e74a.js",
     "service-worker.js": "/Fylo/service-worker.js",
     "static/js/2.d241d50a.chunk.js.LICENSE": "/Fylo/static/js/2.d241d50a.chunk.js.LICENSE",
     "static/media/Calibre-Light.woff2": "/Fylo/static/media/Calibre-Light.183de736.woff2",
@@ -65,6 +65,6 @@
   "entrypoints": [
     "static/js/runtime-main.5bdd242f.js",
     "static/js/2.d241d50a.chunk.js",
-    "static/js/main.bea17a14.chunk.js"
+    "static/js/main.10a981fd.chunk.js"
   ]
 }
