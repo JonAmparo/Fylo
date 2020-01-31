@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Fylo/precache-manifest.83b34a623588bbb53837d5e0df31d3b8.js"
+  "/Fylo/precache-manifest.43103cb826522e24f64d3d0ecfddbeeb.js"
 );
 
 self.addEventListener('message', (event) => {
