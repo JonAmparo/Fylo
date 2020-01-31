@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3dd27a6b0339a82896048cd19a5997f9",
+    "revision": "0e9b88385a86c9e51db25fda7787f401",
     "url": "/Fylo/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Fylo/static/js/2.d241d50a.chunk.js.LICENSE"
   },
   {
-    "revision": "5832cded1c7646fcc7e6",
-    "url": "/Fylo/static/js/main.a285b0b7.chunk.js"
+    "revision": "e3adf7d43007dfd48dc6",
+    "url": "/Fylo/static/js/main.bea17a14.chunk.js"
   },
   {
     "revision": "8a8620f1a524acdf0d7b",
