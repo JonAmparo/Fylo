@@ -57,7 +57,7 @@ const NavLink = styled(Link)`
 const Nav = () => {
   return (
     <NavLinks>
-      <LogoLink href='#!'>
+      <LogoLink href='#'>
         <IconLogo />
       </LogoLink>
 

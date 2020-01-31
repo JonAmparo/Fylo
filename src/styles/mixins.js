@@ -35,7 +35,7 @@ const mixins = {
     `};
 
     ${media.xs`
-    max-width: 24rem;
+      max-width: 24rem;
     `};
   `,
 

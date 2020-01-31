@@ -118,7 +118,7 @@ const Footer = () => {
   return (
     <StyledContainer>
       <LogoLocation>
-        <LogoLink href='#!'>
+        <LogoLink href='#'>
           <IconLogo />
         </LogoLink>
         <SectionLocaton>
@@ -147,40 +147,40 @@ const Footer = () => {
       <SectionLinks>
         <ul>
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               About Us
             </a>
           </li>
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Jobs
             </a>
           </li>
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Press
             </a>
           </li>
 
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Blog
             </a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Contact Us
             </a>
           </li>
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Terms Us
             </a>
           </li>
           <li>
-            <a href='#!' target='_blank' rel='noopener noreferrer'>
+            <a href='#' target='_blank' rel='noopener noreferrer'>
               Privacy
             </a>
           </li>
@@ -188,13 +188,13 @@ const Footer = () => {
       </SectionLinks>
 
       <SectionSocials>
-        <a href='#!' target='_blank' rel='noopener noreferrer'>
+        <a href='#' target='_blank' rel='noopener noreferrer'>
           <FaFacebookF />
         </a>
-        <a href='#!' target='_blank' rel='noopener noreferrer'>
+        <a href='#' target='_blank' rel='noopener noreferrer'>
           <FaTwitter />
         </a>
-        <a href='#!' target='_blank' rel='noopener noreferrer'>
+        <a href='#' target='_blank' rel='noopener noreferrer'>
           <FaInstagram />
         </a>
       </SectionSocials>

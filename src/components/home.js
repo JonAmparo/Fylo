@@ -349,7 +349,7 @@ const Home = () => {
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
-          <a href='#!'>
+          <a href='#'>
             See how Fylo works
             <IconArroww />
           </a>
